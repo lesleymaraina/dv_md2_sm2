@@ -67,21 +67,47 @@ Markdown(tabulate(
 ::: footer
 :::
 
+
 ## <span style="font-size:80%">Common Data Types in Clinical and Scientific Literature</span> {.smaller}
 
-
 ::: columns
-::: {.column width="90%"}
-![](images/Data_viz_types_biomedical_sci.png){.border .border-thick}
+::: {.column width="50%"}
+**Survey of 227,998 PubMed Central papers across 23 fields**
+
+
 :::
 
 ::: {.column width="50%"}
+```{python}
+
+#%pip install tabulate
+
+
+from IPython.display import Markdown
+from tabulate import tabulate
+table = [["Bar graph",1078],
+         ["Bar graph with dot plot",	149],
+         ["Dot plot", 	393],
+         ["Box plot", 	368],
+         ["Violin plot",	340],
+         ["Histogram",238],
+         ["Flow chart",276],
+         ["Pie chart",160]]
+Markdown(tabulate(
+  table, 
+  headers=["Figure Type", "Count (n)"]
+))
+```
 
 :::
-<span style="font-size:60%">Ariga, K., et. al. (2022). History and Philosophy of the Life Sciences.</span>
+<span style="font-size:60%">Riedel, N. Clin Sci (Lond). 2022. </span>
 :::
 ::: footer
 :::
+
+
+
+
 
 
 
@@ -163,7 +189,7 @@ Markdown(tabulate(
 
 
 ::: columns
-::: {.column width="30%"}
+::: {.column width="40%"}
 **Approach**: Find an example from the literature that implements a similar approach
 
 **Summary**:
@@ -171,7 +197,7 @@ Sammut et al., Nature (2022) evaluated whether pretreatment tumor â€œecosystemâ€
 
 :::
 
-::: {.column width="70%"}
+::: {.column width="60%"}
 ![](images/nature_paper_bc.png){.border .border-thick}
 :::
 
@@ -219,7 +245,7 @@ Given/Find data $\rightarrow$ Visualize Data for Task
 
 
 ::: columns
-::: {.column width="50%"}
+::: {.column width="90%"}
 Given/Find data $\rightarrow$ Visualize Data for Task
 
 ::: incremental
@@ -232,7 +258,7 @@ Given/Find data $\rightarrow$ Visualize Data for Task
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="10%"}
 
 
 
@@ -370,7 +396,7 @@ Single-feature association with outcome: a box plot of tumor mutation burden (TM
 ## <span style="font-size:80%">Review</span> {.smaller}
 
 ::: columns
-::: {.column width="50%"}
+::: {.column width="80%"}
 
 
 ::: incremental
@@ -383,7 +409,7 @@ Single-feature association with outcome: a box plot of tumor mutation burden (TM
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="20%"}
 ![](images/male_scientist.png){.border .border-thick}
 :::
 
@@ -395,7 +421,7 @@ Single-feature association with outcome: a box plot of tumor mutation burden (TM
 ## <span style="font-size:80%">Review</span> {.smaller}
 
 ::: columns
-::: {.column width="50%"}
+::: {.column width="80%"}
 
 
 
@@ -415,7 +441,7 @@ Future
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="20%"}
 ![](images/male_scientist.png){.border .border-thick}
 :::
 
